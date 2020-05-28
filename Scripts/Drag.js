@@ -3,34 +3,22 @@ var firstDrag = true;
 var posl;
 var post;
 var elmnt;
-var testing;
 
 function ResetElement()
 {
     if (!firstDrag)
     {
-        console.log("HEY 2");
-        console.log("Left " + elmnt.offsetLeft);
-        console.log("Top " + elmnt.offsetTop);
         elmnt.style.left = null;
         elmnt.style.top = null;
-        console.log("HEY 3");
-        console.log("Left " + elmnt.offsetLeft);
-        console.log("Top " + elmnt.offsetTop);
         firstDrag = true;
     }
 }
 
 function dragElement() {
-     elmnt = document.getElementById("Window");
+    elmnt = document.getElementById("window");
     if (firstDrag) {
-        console.log("HEY 1");
-        console.log("Left " + elmnt.offsetLeft);
-        console.log("Top " + elmnt.offsetTop);
         posl = elmnt.offsetLeft;
         post = elmnt.offsetTop;
-        console.log("LEFT "+posl);
-        console.log("TOP " + post);
         firstDrag = false;
     }
     var pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;
