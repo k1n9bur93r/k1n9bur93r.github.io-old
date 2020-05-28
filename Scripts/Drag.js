@@ -3,6 +3,7 @@ var firstDrag = true;
 var posl;
 var post;
 var elmnt;
+var testing;
 
 function ResetElement()
 {
