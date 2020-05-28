@@ -1,0 +1,247 @@
+﻿@import url('open-iconic/font/css/open-iconic-bootstrap.min.css');
+
+html, body {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+a, .btn-link {
+    color: #0366d6;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #1b6ec2;
+    border-color: #1861ac;
+}
+
+app {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.top-row {
+    height: 3.5rem;
+    display: flex;
+    align-items: center;
+}
+
+.main {
+    flex: 1;
+}
+
+    .main .top-row {
+        background-color: #f7f7f7;
+        border-bottom: 1px solid #d6d5d5;
+        justify-content: flex-end;
+    }
+
+        .main .top-row > a, .main .top-row .btn-link {
+            white-space: nowrap;
+            margin-left: 1.5rem;
+        }
+
+.main .top-row a:first-child {
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.sidebar {
+    background-image: linear-gradient(180deg, rgb(5, 39, 103) 0%, #3a0647 70%);
+}
+
+    .sidebar .top-row {
+        background-color: rgba(0,0,0,0.4);
+    }
+
+    .sidebar .navbar-brand {
+        font-size: 1.1rem;
+    }
+
+    .sidebar .oi {
+        width: 2rem;
+        font-size: 1.1rem;
+        vertical-align: text-top;
+        top: -2px;
+    }
+
+    .sidebar .nav-item {
+        font-size: 0.9rem;
+        padding-bottom: 0.5rem;
+    }
+
+        .sidebar .nav-item:first-of-type {
+            padding-top: 1rem;
+        }
+
+        .sidebar .nav-item:last-of-type {
+            padding-bottom: 1rem;
+        }
+
+        .sidebar .nav-item a {
+            color: #d7d7d7;
+            border-radius: 4px;
+            height: 3rem;
+            display: flex;
+            align-items: center;
+            line-height: 3rem;
+        }
+
+            .sidebar .nav-item a.active {
+                background-color: rgba(255,255,255,0.25);
+                color: white;
+            }
+
+            .sidebar .nav-item a:hover {
+                background-color: rgba(255,255,255,0.1);
+                color: white;
+            }
+
+.content {
+    padding-top: 1.1rem;
+}
+
+.navbar-toggler {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.valid.modified:not([type=checkbox]) {
+    outline: 1px solid #26b050;
+}
+
+.invalid {
+    outline: 1px solid red;
+}
+
+.validation-message {
+    color: red;
+}
+
+#blazor-error-ui {
+    background: lightyellow;
+    bottom: 0;
+    box-shadow: 0 -1px 2px rgba(0, 0, 0, 0.2);
+    display: none;
+    left: 0;
+    padding: 0.6rem 1.25rem 0.7rem 1.25rem;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+}
+
+#blazor-error-ui .dismiss {
+    cursor: pointer;
+    position: absolute;
+    right: 0.75rem;
+    top: 0.5rem;
+}
+.center-window {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    transition: 0.25s;
+}
+
+.corner-window {
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    display: block;
+    overflow-x: hidden; /* Disable horizontal scroll */
+    transition: 0.25s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+}
+.fullscreen-window {
+    height: 97%;
+    width: 100%;
+    transition: 0.25s;
+}
+.taskbar-text {
+display:inline-block;
+}
+video {
+    width: 100%;
+    height: auto;
+}
+
+@media (max-width: 767.98px) {
+
+    .popup-window {
+        height: 600px;
+        width: 350px;
+        transition: 0.25s;
+    }
+    .popup-window-inner-small {
+        height: 506px;
+        width: 300px;
+        transition: 0.25s;
+    }
+    .popup-window-inner-full {
+        height: 83vh;
+        transition: 0.25s;
+    }
+    .taskbar-text {
+    display:none;
+    }
+    .row-color-main {
+        background-color:#dbdbdb!important
+    }
+    .row-color-alt {
+        background-color: #a1a1a1!important
+    }
+}
+
+@media (min-width: 768px) {
+    .popup-window {
+        height: 500px;
+        width: 730px;
+        transition: 0.25s;
+    }
+    .popup-window-inner-small {
+        height: 408px;
+        width: 686px;
+        transition: 0.25s;
+    }
+    .popup-window-inner-full {
+        height: 87vh;
+        transition: 0.25s;
+    }
+}
+@media (max-width:1599px ) and (min-width: 1000px) {
+    .popup-window {
+        height: 1000px;
+        width: 900px;
+        transition: 0.25s;
+    }
+    .popup-window-inner-small {
+        height: 908px;
+        width: 845px;
+        transition: 0.25s;
+    }
+    .popup-window-inner-full {
+        height: 90vh;
+        transition: 0.25s;
+    }
+
+}
+    @media (max-width:4000px ) and (min-width: 1600px) {
+        .popup-window {
+            height: 1000px;
+            width: 1850px;
+            transition: 0.25s;
+        }
+        .popup-window-inner-small {
+            height: 909px;
+            width: 1800px;
+            transition: 0.25s;
+        }
+        .popup-window-inner-full {
+            height: 90vh;
+            transition: 0.25s;
+        }
+        video {
+            width: 75%;
+            height: auto;
+        }
+    }
