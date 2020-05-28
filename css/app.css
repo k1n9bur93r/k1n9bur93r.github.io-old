@@ -164,7 +164,17 @@ video {
     width: 100%;
     height: auto;
 }
-
+.popup-header {
+    z-index: 2 !important;
+    height: 40px !important;
+    border: solid !important;
+    border-bottom: none !important;
+    border-width: 2px !important;
+    border-right-color: #424242 !important;
+    border-left-color: #fff !important;
+    border-top-color: #fff !important;
+}
+}
 @media (max-width: 767.98px) {
 
     .popup-window {
@@ -215,7 +225,7 @@ video {
         transition: 0.25s;
     }
     .popup-window-inner-small {
-        height: 607px;
+        height: 647px;
         width: 845px;
         transition: 0.25s;
     }
