@@ -174,7 +174,7 @@ video {
     border-left-color: #fff !important;
     border-top-color: #fff !important;
 }
-}
+
 @media (max-width: 767.98px) {
 
     .popup-window {
@@ -183,7 +183,7 @@ video {
         transition: 0.25s;
     }
     .popup-window-inner-small {
-        height: 506px;
+        height: 549px;
         width: 300px;
         transition: 0.25s;
     }
@@ -209,7 +209,7 @@ video {
         transition: 0.25s;
     }
     .popup-window-inner-small {
-        height: 408px;
+        height: 445px;
         width: 686px;
         transition: 0.25s;
     }
@@ -237,12 +237,12 @@ video {
 }
     @media (max-width:4000px ) and (min-width: 1600px) {
         .popup-window {
-            height: 870px;
+            height: 753px;
             width: 1850px;
             transition: 0.25s;
         }
         .popup-window-inner-small {
-            height: 779px;
+            height: 705px;
             width: 1800px;
             transition: 0.25s;
         }
