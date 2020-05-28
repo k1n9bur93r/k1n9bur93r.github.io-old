@@ -210,12 +210,12 @@ video {
 }
 @media (max-width:1599px ) and (min-width: 1000px) {
     .popup-window {
-        height: 870px;
+        height: 700px;
         width: 900px;
         transition: 0.25s;
     }
     .popup-window-inner-small {
-        height: 779px;
+        height: 607px;
         width: 845px;
         transition: 0.25s;
     }
