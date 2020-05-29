@@ -4,6 +4,16 @@ var posl;
 var post;
 var elmnt;
 
+function getAgent()
+{
+    var chromeAgent = userAgentString.indexOf("Chrome") > -1; 
+    var safariAgent = userAgentString.indexOf("Safari") > -1;
+
+    if ((chromeAgent) && (safariAgent)) return false;
+    else return true;
+
+}
+
 function ResetElement()
 {
     if (!firstDrag)
