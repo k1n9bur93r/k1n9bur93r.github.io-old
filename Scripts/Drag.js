@@ -6,13 +6,12 @@ var elmnt;
 
 function getAgent()
 {
-    console.log("hey im here");
     var userAgentString = navigator.userAgent; 
     var chromeAgent = userAgentString.indexOf("Chrome") > -1; 
     var safariAgent = userAgentString.indexOf("Safari") > -1;
     //if ((chromeAgent) ) return true;
     if ((chromeAgent) && (safariAgent)) return false;
-    else return false;
+    else return true;
 
 }
 
